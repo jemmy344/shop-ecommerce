@@ -1,0 +1,8 @@
+.jumbotron {
+    background-image: url("../pexels-ron-lach-8311889.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    height: 40%;
+}
