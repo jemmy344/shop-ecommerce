@@ -15,7 +15,7 @@ function getAllProducts() {
             '</h3><img class="card-img-top product-img" src="' +
             products[i].image +
             '" alt="Card image cap"/><p class= "price"> £' +
-            products[i].price +
+            products[i].price.toFixed(2) +
             '</p><p class= "description" style="font-size:1rem">' +
             products[i].description +
             "</p><button type='button' class='btn btn-primary'>Primary</button></div></div>"
