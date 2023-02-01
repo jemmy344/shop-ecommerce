@@ -4,20 +4,15 @@ function getAllProducts() {
     url: queryURL,
     method: "GET",
   }).then(function (products) {
-    // console.log(products);
-    for (var i = 0; i < products.length; i++) {
-      // if (i % 3 === 0) {
-      //   $(".container").append("<div class='row'>");
-      // }
-    }
+    $(".container").append("<div class='row'>");
 
     $(".row").each(function () {
       for (var i = 0; i < products.length; i++) {
         // change 9am to 09am for string comparison
         $(".row").append(
-          '<div class="card" col-3 style="width:20vw"><h3>' +
+          '<div class="col-md-4 col-sm-6" ><div class="card"><h3>' +
             products[i].title +
-            '<h3><img class="card-img-top style="height:20px" src="' +
+            '</h3><img class="card-img-top product-img" src="' +
             products[i].image +
             '" alt="Card image cap"/><p class= "price"> £' +
             products[i].price +
@@ -29,5 +24,4 @@ function getAllProducts() {
     });
   });
 }
-
 getAllProducts();
