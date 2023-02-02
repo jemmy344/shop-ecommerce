@@ -1,4 +1,21 @@
 var queryURL = "https://fakestoreapi.com/products";
+function getConverter() {
+  var queryconverterURL = 'https://api.api-ninjas.com/v1/convertcurrency?want=EUR&have=USD&amount=5000';
+    $.ajax({
+      method: 'GET',
+      url: queryconverterURL,
+      headers: { 'X-Api-Key': 'cIjIyWC0IjyVZyex6O08pw==tm1WuKoKt4tSK2rB'},
+      contentType: 'application/json',
+      // Show result from converter api
+      success: function(result) {
+          console.log(result);
+      },
+      // Show errors
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
+  });
+}
 function getAllProducts() {
   $.ajax({
     url: queryURL,
@@ -30,4 +47,5 @@ function getAllProducts() {
   });
 }
 
+getConverter();
 getAllProducts();
