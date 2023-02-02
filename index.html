@@ -7,39 +7,71 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Group Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <!--Fixes navbar to right-->
-      <div class="container-fluid d-flex justify-content-end align-items-center">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div
+        class="container-fluid d-flex justify-content-end align-items-center"
+      >
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="d-flex justify-content-start">
             <!--Navbar have blank hrefs-->
+            <a class="navbar-brand" href="#">Navbar</a>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Best seller</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Categories
                 </a>
                 <ul class="dropdown-menu">
                   <!--dropdown menu-->
                   <li><a class="dropdown-item" href="#">Jewellery</a></li>
                   <li><a class="dropdown-item" href="#">Accessories</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Clothing</a></li>
                 </ul>
               </li>
             </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <!--margin left for search button-->
+              <button class="btn btn-primary ml-2" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
             <div id="navbar-icons">
               <!--Navbar icons-->
               <a href="#"><img src="./images/user.png" alt="user-icon" height="18" width="18"></a>
@@ -57,7 +89,7 @@
           <h1 class="display-4">Shop our new arrivals</h1>
         </div>
       </div>
-      <div class ="product-container"></div>
+      <div class="product-container"></div>
     </main>
     <!-- Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
