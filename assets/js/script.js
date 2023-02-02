@@ -18,11 +18,14 @@ function getAllProducts() {
             products[i].price.toFixed(2) +
             '</p><p class= "card-text ">' +
             products[i].description +
-            "</p><button type='button' class='btn btn-primary'>Primary</button></div></div>"
+            "</p><button type='button' class='btn btn-primary checkout-btn'>Primary</button></div></div>"
         );
       }
     });
     $(".product-img").css({ width: "60%", margin: "10%" });
+    $(".checkout-btn").on("click", function (event) {
+      console.log($(this.title));
+    });
   });
 }
 
