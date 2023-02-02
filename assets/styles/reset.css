@@ -14,3 +14,23 @@
     font-size: 18px;
 }
 
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Controls anchor links within footer */
+#footer a {
+    color: #000;
+    font-size: 17px;
+    background-color: #fafafa;
+    border-top: 1px solid #000;
+    text-decoration: none;
+}
+
+/* Adds animation to link when user hovers */
+#footer a:hover {
+    transition-duration: 0.7s;
+    box-shadow: 10px 10px 10px blue;
+}
