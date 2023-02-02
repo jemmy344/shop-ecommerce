@@ -10,18 +10,20 @@ function getAllProducts() {
       for (var i = 0; i < products.length; i++) {
         // change 9am to 09am for string comparison
         $(".row").append(
-          '<div class="col-md-4 col-sm-6" ><div class="card"><h3>' +
-            products[i].title +
-            '</h3><img class="card-img-top product-img" src="' +
+          '<div class="col-md-4 col-sm-6" ><div class="card h-100"><div class="card-body"><img class=" product-img" src="' +
             products[i].image +
-            '" alt="Card image cap"/><p class= "price"> £' +
+            '" alt="image cap"/><h3 card-title>' +
+            products[i].title +
+            '</h3><p class= "price"> £' +
             products[i].price.toFixed(2) +
-            '</p><p class= "description" style="font-size:1rem">' +
+            '</p><p class= "card-text ">' +
             products[i].description +
             "</p><button type='button' class='btn btn-primary'>Primary</button></div></div>"
         );
       }
     });
+    $(".product-img").css({ width: "60%", margin: "10%" });
   });
 }
+
 getAllProducts();
