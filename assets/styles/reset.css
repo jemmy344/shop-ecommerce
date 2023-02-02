@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    height: 40%;
+    height: 100vh;
 }
 
 /* Navbar links */
@@ -13,4 +13,20 @@
     color: #36454F;
     font-size: 18px;
 }
+
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Controls anchor links within footer */
+#footer a {
+    color: #000;
+    font-size: 17px;
+    background-color: #fafafa;
+    border-top: 1px solid #000;
+    text-decoration: none;
+}
+
 
