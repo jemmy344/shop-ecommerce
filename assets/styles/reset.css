@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    height: 40%;
+    height: 100vh;
 }
 
 /* Navbar links */
@@ -29,8 +29,4 @@
     text-decoration: none;
 }
 
-/* Adds animation to link when user hovers */
-#footer a:hover {
-    transition-duration: 0.7s;
-    box-shadow: 10px 10px 10px blue;
-}
+
