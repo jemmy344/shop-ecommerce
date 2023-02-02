@@ -4,7 +4,7 @@ function getAllProducts() {
     url: queryURL,
     method: "GET",
   }).then(function (products) {
-    $(".container").append("<div class='row'>");
+    $(".product-container").append("<div class='row'>");
 
     $(".row").each(function () {
       for (var i = 0; i < products.length; i++) {
@@ -22,6 +22,7 @@ function getAllProducts() {
         );
       }
     });
+    
     $(".product-img").css({ width: "60%", margin: "10%" });
     $(".checkout-btn").on("click", function (event) {
       console.log($(this.title));
