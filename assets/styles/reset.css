@@ -6,3 +6,11 @@
     background-color: transparent;
     height: 40%;
 }
+
+/* Navbar links */
+.nav-link {
+    /* hex code for charcoal */
+    color: #36454F;
+    font-size: 18px;
+}
+
