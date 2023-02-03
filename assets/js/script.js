@@ -1,20 +1,19 @@
 var queryURL = "https://fakestoreapi.com/products";
 function getConverter() {
-  var queryconverterURL =
-    "https://api.api-ninjas.com/v1/convertcurrency?want=EUR&have=USD&amount=5000";
-  $.ajax({
-    method: "GET",
-    url: queryconverterURL,
-    headers: { "X-Api-Key": "cIjIyWC0IjyVZyex6O08pw==tm1WuKoKt4tSK2rB" },
-    contentType: "application/json",
-    // Show result from converter api
-    success: function (result) {
-      console.log(result);
-    },
-    // Show errors
-    error: function ajaxError(jqXHR) {
-      console.error("Error: ", jqXHR.responseText);
-    },
+  var queryconverterURL = 'https://api.api-ninjas.com/v1/convertcurrency?want=EUR&have=USD&amount=5000';
+    $.ajax({
+      method: 'GET',
+      url: queryconverterURL,
+      headers: { 'X-Api-Key': 'cIjIyWC0IjyVZyex6O08pw==tm1WuKoKt4tSK2rB'},
+      contentType: 'application/json',
+      // Show result from converter api
+      success: function(result) {
+          console.log(result);
+      },
+      // Show errors
+      error: function ajaxError(jqXHR) {
+          console.error('Error: ', jqXHR.responseText);
+      }
   });
 }
 function getAllProducts() {
@@ -34,14 +33,12 @@ function getAllProducts() {
                   products[i].image
                 } alt="image cap"/>
                 <div class="card-body d-flex flex-column">
-                  <h3 class='card-text card-title product-title'>${
-                    products[i].title
-                  }</h3>
-                  <p class= "card-text product-price price"> £${products[
-                    i
-                  ].price.toFixed(2)}</p>
+                  <h3 class='card-text card-title'>${products[i].title}</h3>
+                  <p class= "card-text price"> £${products[i].price.toFixed(
+                    2
+                  )}</p>
                   <p class= "card-text">${products[i].description}</p>
-                  <button type='button' class=' mt-auto btn-primary btn add-to-basket-btn'>Add to basket</button>
+                  <button type='button' class=' mt-auto btn-primary btn'>Add to basket</button>
                 </div>
               </div>
            </div>`
@@ -60,19 +57,12 @@ function getAllProducts() {
 
     $(".btn").css({ width: "70%", margin: "0 auto" });
 
-    // push to localStorage
-    $(".add-to-basket-btn").on("click", function () {
-      // Get the title
-      productTitle = $(this).siblings(".product-title").text();
-      // Get the price
-      productPrice = $(this).siblings(".product-price").text();
-      localStorage.setItem(productTitle, productPrice);
-      console.log(localStorage);
+    // $(".card-text").css({ "flex-grow": "1" });
+    $(".checkout-btn").on("click", function (event) {
+      console.log($(this.title));
     });
   });
 }
 
-getConverter();
 getAllProducts();
 
-// send to local storage
