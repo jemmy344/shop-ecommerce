@@ -41,7 +41,7 @@ function getAllProducts() {
                     i
                   ].price.toFixed(2)}</p>
                   <p class= "card-text">${products[i].description}</p>
-                  <button type='button' class=' mt-auto btn-primary btn add-to-basket'>Add to basket</button>
+                  <button type='button' class=' mt-auto btn-success btn add-to-basket'>Add to basket</button>
                 </div>
               </div>
            </div>`
