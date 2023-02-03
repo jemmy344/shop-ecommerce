@@ -5,14 +5,21 @@
     background-position: center;
     background-color: transparent;
     height: 100vh;
-    height: 80%;
+}
+
+p,
+h1,
+h3,
+h5,
+a {
+    font-family: 'Noto Serif', serif;
 }
 
 /* Navbar links */
 .nav-link {
-    /* hex code for charcoal */
-    color: #36454F;
-    font-size: 18px;
+    /* hex code for dark green */
+    color: #0000FF;
+    font-size: 20px;
 }
 
 #footer {
@@ -29,11 +36,11 @@
     text-decoration: none;
 }
 
-/* Gives icon background color of grey */
+/* Gives icon background color of blue */
 .footer-basic {
     padding: 40px 0;
     background-color: #ffffff;
-    color: blue;
+    color: #0000FF;
 }
 
 .footer-basic ul {
