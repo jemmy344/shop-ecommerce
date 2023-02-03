@@ -1,10 +1,14 @@
 .jumbotron {
-    background-image: url("../pexels-ron-lach-8311889.jpg");
+    background-image: url("../../images/pexels-ron-lach-9603489.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: 80%;
+>>>>>>> feature/model
 }
 
 /* Navbar links */
@@ -14,6 +18,7 @@
     font-size: 18px;
 }
 
+<<<<<<< HEAD
 
 #footer {
     display: flex;
@@ -95,3 +100,15 @@
     color: #aaa;
     margin-bottom: 0;
 }
+=======
+/*card*/
+.bigger-card {
+    width: 500px;
+    height: 300px;
+  }
+
+  .btn-custom-color {
+    color: #004225;
+    
+  }
+>>>>>>> feature/model
