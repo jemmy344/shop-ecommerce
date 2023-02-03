@@ -76,7 +76,7 @@
               <a href="#"><img src="./images/user.png" alt="user-icon" height="18" width="18"></a>
               <a href="#"><img src="./images/search.png" alt="search-icon" height="18" width="18"></a>
               <a href="./checkout.html"><img src="./images/shopping-bag.png" alt="shopping-bag-icon" height="18"
-                  width="18"></a>
+                  width="18" id="shopping-bag-icon"></a>
             </div>
         </nav>
       </div>
@@ -114,7 +114,10 @@
             </div>
           </div>
         </div>
-
+        <audio id="apple-sound" preload="auto">
+          <source src="./Sounds/tomp3.cc - Apple Pay Success Sound Effect.mp3">
+          </source>
+        </audio>
       </div>
     </div>
     </div>
@@ -150,6 +153,11 @@
   <script src="./assets/js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <!--Adds apple sound to modal-->
+  <script>
+    const appleSound = new Audio("./Sounds/tomp3.cc - Apple Pay Success Sound Effect.mp3");
+    $('.btn').click(e => appleSound.play());
+  </script>
 </body>
 
 </html>
