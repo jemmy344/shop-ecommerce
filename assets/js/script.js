@@ -60,10 +60,12 @@ function getAllProducts() {
 
     $(".btn").css({ width: "70%", margin: "0 auto" });
 
+    var basket = [];
     $(".add-to-basket").on("click", function () {
       productTitle = $(this).siblings(".product-title").text();
       productPrice = $(this).siblings(".product-price").text();
-      localStorage.setItem(productTitle, productPrice);
+      basket.push({ productTitle, productPrice });
+      localStorage.setItem(basket, JSON.stringify(basket));
     });
   });
 }
