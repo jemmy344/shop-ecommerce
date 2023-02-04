@@ -68,6 +68,7 @@ function getAllProducts() {
     console.log(localStorage);
   });
 
+  // Function to add the product to a basket, and send to localStorage
   function addtoBasket(productTitle, productPrice) {
     // Create a basket
     var basketArray = [];
@@ -78,7 +79,6 @@ function getAllProducts() {
     };
 
     // Create my object that we push to localStorage
-    console.log(basketItem);
     // If a basket is empty, it won't be in local storage
     if (localStorage.getItem("basket") === null) {
       // put the item in the basket
@@ -96,4 +96,4 @@ function getAllProducts() {
   }
 }
 getAllProducts();
-console.log(localStorage);
+
