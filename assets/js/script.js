@@ -60,14 +60,40 @@ function getAllProducts() {
 
     $(".btn").css({ width: "70%", margin: "0 auto" });
 
-    var basket = [];
     $(".add-to-basket").on("click", function () {
-      productTitle = $(this).siblings(".product-title").text();
-      productPrice = $(this).siblings(".product-price").text();
-      basket.push({ productTitle, productPrice });
-      localStorage.setItem(basket, JSON.stringify(basket));
+      var productTitle = $(this).siblings(".product-title").text();
+      var productPrice = $(this).siblings(".product-price").text();
+      addtoBasket(productTitle, productPrice);
     });
+    console.log(localStorage);
   });
-}
 
+  // Function to add the product to a basket, and send to localStorage
+  function addtoBasket(productTitle, productPrice) {
+    // Create a basket
+    var basketArray = [];
+    // Create a basket item
+    var basketItem = {
+      product: productTitle,
+      price: productPrice,
+    };
+
+    // Create my object that we push to localStorage
+    // If a basket is empty, it won't be in local storage
+    if (localStorage.getItem("basket") === null) {
+      // put the item in the basket
+      basketArray.push(basketItem);
+      // send the basket to localStorage
+      localStorage.setItem("basket", JSON.stringify(basketArray));
+    } else {
+      //  the basket is already in localStorage, basketArray becomes the basket in the localStorage using parse
+      basketArray = JSON.parse(localStorage.getItem("basket"));
+      // put the new item in the basket
+      basketArray.push(basketItem);
+      // return the basket to localStorage
+      localStorage.setItem("basket", JSON.stringify(basketArray));
+    }
+  }
+}
 getAllProducts();
+
