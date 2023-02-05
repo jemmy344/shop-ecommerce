@@ -113,3 +113,9 @@ a {
     color: #004225;
 
 }
+
+.bg-image {
+    background-image: url("../../images/pexels-ron-lach-8311889.jpg");
+    height: 500px;
+    background-size: cover;
+  }
