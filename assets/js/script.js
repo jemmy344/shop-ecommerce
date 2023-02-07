@@ -8,7 +8,7 @@ function getConverter() {
     contentType: "application/json",
     // Show result from converter api
     success: function (result) {
-      // console.log(result);
+
     },
     // Show errors
     error: function ajaxError(jqXHR) {
@@ -107,3 +107,12 @@ function displayProductCards(products) {
     }
   });
 }
+
+getAllProducts();
+
+
+
+document.getElementById("saveEmailButton").addEventListener("click", function() {
+  let emailInput = document.getElementById("emailInput").value;
+  localStorage.setItem("email", emailInput);
+});
