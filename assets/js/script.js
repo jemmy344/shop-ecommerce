@@ -107,3 +107,9 @@ function displayProductCards(products) {
     }
   });
 }
+
+
+document.getElementById("saveEmailButton").addEventListener("click", function() {
+  let emailInput = document.getElementById("emailInput").value;
+  localStorage.setItem("email", emailInput);
+});

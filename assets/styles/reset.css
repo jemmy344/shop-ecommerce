@@ -113,3 +113,30 @@ a {
     color: #004225;
 
 }
+
+.bg-image {
+    background-image: url("../../images/pexels-ron-lach-8311889.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+/* Gives navbar background color with opacity to see cards whilst scrolling */
+.nav {
+    background-color: rgba(250, 249, 246, 0.9);
+    height: 15vh;
+}
+
+/* Creates space between navbar and jumbotron */
+.container {
+    margin-top: 70px;
+}
+
+/* increases size of paragraph in jumbotron */
+.container p {
+    font-size: 26px;
+    margin: 30px;
+}
+
+.footer-basic a:hover {
+    color: red;
+}
