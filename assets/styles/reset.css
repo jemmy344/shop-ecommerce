@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    height: 100vh;
+    height: 70vh;
 }
 
 p,
@@ -118,6 +118,14 @@ a {
     background-image: url("../../images/pexels-ron-lach-8311889.jpg");
     height: 500px;
     background-size: cover;
+
+  }
+
+  .rounded-button {
+    border-radius: 100px;
+  }
+  
+
 }
 
 /* Gives navbar background color with opacity to see cards whilst scrolling */
