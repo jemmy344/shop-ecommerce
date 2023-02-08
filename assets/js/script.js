@@ -8,7 +8,6 @@ function getConverter() {
     contentType: "application/json",
     // Show result from converter api
     success: function (result) {
-
     },
     // Show errors
     error: function ajaxError(jqXHR) {
@@ -33,9 +32,6 @@ function getAllProducts() {
   });
 }
 getAllProducts();
-
-
-
 // Displays the product information on product cards
 function displayProductCards(products) {
   $(".product-container").append("<div class='row'>");
@@ -76,7 +72,10 @@ function displayProductCards(products) {
 
   $(".add-to-basket").on("click", function () {
     var productTitle = $(this).siblings(".product-title").text();
+    var productPrice = $(this).siblings(".product-price").text().slice(2);
+    var productPriceFloat = parseFloat(productPrice);
     var productPrice = $(this).siblings(".product-price").text();
+
     addtoBasket(productTitle, productPrice);
 
     // Function to add the product to a basket, and send to localStorage
@@ -107,12 +106,15 @@ function displayProductCards(products) {
     }
   });
 }
-
+document
+  .getElementById("saveEmailButton")
+  .addEventListener("click", function () {
+    let emailInput = document.getElementById("emailInput").value;
+    localStorage.setItem("email", emailInput);
+  });
 getAllProducts();
-
-
-
 document.getElementById("saveEmailButton").addEventListener("click", function() {
   let emailInput = document.getElementById("emailInput").value;
   localStorage.setItem("email", emailInput);
 });
+
