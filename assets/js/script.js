@@ -74,9 +74,8 @@ function displayProductCards(products) {
     var productTitle = $(this).siblings(".product-title").text();
     var productPrice = $(this).siblings(".product-price").text().slice(2);
     var productPriceFloat = parseFloat(productPrice);
-    var productPrice = $(this).siblings(".product-price").text();
-
-    addtoBasket(productTitle, productPrice);
+    addtoBasket(productTitle, productPriceFloat);
+  });
 
     // Function to add the product to a basket, and send to localStorage
     function addtoBasket(productTitle, productPrice) {
@@ -104,17 +103,13 @@ function displayProductCards(products) {
         localStorage.setItem("basket", JSON.stringify(basketArray));
       }
     }
-  });
+
 }
+
 document
   .getElementById("saveEmailButton")
   .addEventListener("click", function () {
     let emailInput = document.getElementById("emailInput").value;
     localStorage.setItem("email", emailInput);
   });
-getAllProducts();
-document.getElementById("saveEmailButton").addEventListener("click", function() {
-  let emailInput = document.getElementById("emailInput").value;
-  localStorage.setItem("email", emailInput);
-});
 
