@@ -144,3 +144,7 @@ a {
 .footer-basic a:hover {
     color: red;
 }
+
+.hidden {
+  transform: translateY(100%);
+}
