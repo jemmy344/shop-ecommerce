@@ -1,12 +1,10 @@
 .jumbotron {
-
     background-image: url("../../images/pexels-ron-lach-9603489.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
     height: 70vh;
-
 }
 
 p,
@@ -125,9 +123,6 @@ a {
   .rounded-button {
     border-radius: 100px;
   }
-  
-
-}
 
 /* Gives navbar background color with opacity to see cards whilst scrolling */
 .nav {
