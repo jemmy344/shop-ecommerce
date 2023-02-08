@@ -1,10 +1,10 @@
 .jumbotron {
-    background-image: url("../../images/pexels-ron-lach-9603489.jpg");
+    background-image: url("../images/pexels-ron-lach-9603489.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    height: 70vh;
+    height: 100vh;
 }
 
 p,
@@ -18,7 +18,7 @@ a {
 /* Navbar links */
 .nav-link {
   /* hex code for dark green */
-  color: #0000ff;
+  color: #28A745;
   font-size: 20px;
 }
 
@@ -115,7 +115,7 @@ a {
 
 
 .bg-image {
-  background-image: url("../../images/pexels-ron-lach-8311889.jpg");
+  background-image: url("../images/pexels-ron-lach-8311889.jpg");
   height: 500px;
   background-size: cover;
 
