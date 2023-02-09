@@ -37,16 +37,13 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Best seller</a>
-              </li>
               <!-- CURRENCY CONVERTER -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle currency-from-title" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  Currency
+                  Currency From
                 </a>
-                <ul class="currency-dropdown dropdown-menu">
+                <ul class="currency-from dropdown-menu">
                   <!--dropdown menu-->
                   <li><a class="dropdown-item" id="USD" href="#">US dollar</a></li>
                   <li><a class="dropdown-item" id="EUR" href="#">Euro</a></li>
@@ -54,6 +51,23 @@
                   <li><a class="dropdown-item" id='GBP'>Pound sterling</a></li>
                 </ul>
               </li>
+              <input class="currencyInput" type="number">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle currency-to-title" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Currency To
+                </a>
+                <ul class="currency-to dropdown-menu">
+                  <!--dropdown menu-->
+                  <li><a class="dropdown-item" id="USD" href="#">US dollar</a></li>
+                  <li><a class="dropdown-item" id="EUR" href="#">Euro</a></li>
+                  <li><a class="dropdown-item" id="JPY">Japanese yen</a></li>
+                  <li><a class="dropdown-item" id='GBP'>Pound sterling</a></li>
+                </ul>
+              </li>
+              <div class="currency-output">
+                                 
+              </div>
               <!-- END CURRENCY CONVERTER -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -162,6 +176,7 @@
     <!--js files -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/api 2.js"></script>
     
 
 <!--Adds apple sound to modal-->
