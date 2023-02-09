@@ -1,10 +1,10 @@
 .jumbotron {
-    background-image: url("../images/pexels-ron-lach-9603489.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    height: 100vh;
+  background-image: url("../images/pexels-ron-lach-9603489.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height: 100vh;
 }
 
 p,
@@ -16,10 +16,15 @@ a {
 }
 
 /* Navbar links */
-.nav-link {
+.nav-link,
+.currency-output {
   /* hex code for dark green */
-  color: #28A745;
+  color: #28a745;
   font-size: 20px;
+}
+
+.currency-output {
+  font-size: 28px;
 }
 
 #footer {
@@ -113,36 +118,34 @@ a {
   color: #004225;
 }
 
-
 .bg-image {
   background-image: url("../images/pexels-ron-lach-8311889.jpg");
   height: 500px;
   background-size: cover;
-
 }
-  .rounded-button {
-    border-radius: 100px;
-  }
+.rounded-button {
+  border-radius: 100px;
+}
 
 /* Gives navbar background color with opacity to see cards whilst scrolling */
 .nav {
-    background-color: rgba(250, 249, 246, 0.9);
-    height: 15vh;
+  background-color: rgba(250, 249, 246, 0.9);
+  height: 15vh;
 }
 
 /* Creates space between navbar and jumbotron */
 .container {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 /* increases size of paragraph in jumbotron */
 .container p {
-    font-size: 26px;
-    margin: 30px;
+  font-size: 26px;
+  margin: 30px;
 }
 
 .footer-basic a:hover {
-    color: red;
+  color: red;
 }
 
 .hidden {
