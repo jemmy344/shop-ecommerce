@@ -11,7 +11,6 @@
         if (form.checkValidity() === false) {
           event.preventDefault()
           event.stopPropagation()
-          setformtolocalStorage()
         }
         form.classList.add('was-validated')
       }, false)
@@ -57,16 +56,5 @@ function getItems() {
           $('.list-group').append(total);   
   }
 }
-
-function setformtolocalStorage() {
-    // Create a basket item
-    var firstName = $('#firstName').val();
-    var lastName = $('#lastName').val();
-    var email = $('#email').val();
-
-    localStorage.setItem('name', firstName);
-    localStorage.setItem('lastName', lastName);
-    localStorage.setItem('email', email);
-  }
 
 getItems();
