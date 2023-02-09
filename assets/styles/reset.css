@@ -151,3 +151,11 @@ a {
 .hidden {
   transform: translateY(100%);
 }
+
+.profile-icon {
+  display: none;
+}
+
+.main-title {
+  padding-top: 200px;
+}
