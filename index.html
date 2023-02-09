@@ -31,12 +31,9 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <section>         
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-              </li>
               <!-- CURRENCY CONVERTER -->
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle currency-from-title" href="#" role="button" data-bs-toggle="dropdown"
@@ -68,6 +65,7 @@
               <div class="currency-output">
                 <br>
               </div>
+            </section>
               <!-- END CURRENCY CONVERTER -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -86,21 +84,22 @@
             </ul>
             <div id="navbar-icons">
               <!--Navbar icons-->
-              <a href="#"><img src="./assets/images/user.png" alt="user-icon" height="20" width="18" style="margin: 3px;"></a>
+              <a href="#"><img class="profile-icon" src="./assets/images/user.png" alt="user-icon" height="20" width="18" style="margin: 3px;"></a>
               <a href="#"><img src="./assets/images/search.png" alt="search-icon" height="20" width="18" style="margin-left: 5px;"></a>
               <a href="./checkout.html"><img src="./assets/images/shopping-bag.png" alt="shopping-bag-icon" height="20" width="18" style="margin: 5px;"></a>
           </div>
         </nav>
       </div>
+  
 
       <div class="container">
-        <div>
+        <div class="main-title">
           <h1 class="display-4 btn-custom-color bolder ">Shop our new arrivals</h1>
           <p>Shopping is a bit of a relaxing hobby for me, which <br>
             is sometimes troubling for the bank balance.</p>
         </div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success text-light btn-rounded" data-bs-toggle="modal"
+        <button type="button" class="btn btn-success text-light btn-rounded btn-modal" data-bs-toggle="modal"
           data-bs-target="#staticBackdrop">
           Launch More
         </button>
@@ -156,13 +155,11 @@
       
       <footer>
         <div class="footer-basic mt-5">
-          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+          <div class="social"><a href="https://www.instagram.com/ " target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/"  target="_blank"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/?lang=en"  target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://en-gb.facebook.com/"  target="_blank"><i class="icon ion-social-facebook"></i></a></div>
           <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="https://github.com/jemmy344/shop-ecommerce" target="_blank">Github</a></li>
-              <li class="list-inline-item"><a href="#">About</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+               
+              <li class="list-inline-item"><a href="https://github.com/jemmy344/shop-ecommerce"  target="_blank">Github</a></li>
+              
           </ul>
           <p class="copyright" style="font-size: 16px; color: #000;">&copy 2023 Jonatan Jemimah Liam Kohl</p>
         </div>
