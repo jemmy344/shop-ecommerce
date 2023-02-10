@@ -13,7 +13,6 @@ function getConverter(currencyChangeFrom, currencyChangeTo, amount) {
     contentType: "application/json",
     // Show result from converter api
     success: function (result) {
-      console.log(result.new_amount);
       $(".currency-output").text(result.new_amount);
     },
     // Show errors
