@@ -18,10 +18,8 @@
   }, false)
 })()
 
-//$('#paymentBtn').on('click', setformtolocalStorage());
 
 //Get local storage and append it to list
-// Function that gets player scores from localStorage and displays them
 function getItems() {
 // Check if localStorage is empty
   if(localStorage.getItem("basket") !== null) {
@@ -32,11 +30,12 @@ function getItems() {
           return obj2.price - obj1.price;
       });
 
+      //Number if items in the basket
       $('#badge').text(sortedArray.length);
       // For each sorted element
       var sumBasket = 0;
       for(var i = 0; i < sortedArray.length; i++) { 
-        sumBasket = sumBasket + basket[i].price;
+        sumBasket += basket[i].price;
         var item = 
         `<li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
